@@ -1251,7 +1251,7 @@ export function create_client({ target, base, trailing_slash }) {
 				// See:
 				// - https://github.com/sveltejs/kit/issues/4045
 				// - https://github.com/sveltejs/kit/issues/5725
-				if (!is_svg_a_element && !(url.protocol === 'https:' || url.protocol === 'http:')) return;
+				if (!is_svg_a_element && !(url.protocol === 'https:' || url.protocol === 'http:' || url.protocol === 'tauri:')) return;
 
 				// Ignore if tag has
 				// 1. 'download' attribute
